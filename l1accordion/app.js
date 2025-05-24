@@ -11,7 +11,7 @@ for (let x = 0; x < getacctitles.length; x++) {
 
   getacctitles[x].addEventListener("click", function (e) {
     // console.log(x); // clicked element idx
-    //console.log(getacctitles[x]); // <h1 class="acctitle">
+    // console.log(getacctitles[x]); // <h1 class="acctitle">
     // console.log(e.target); // <h1 class="acctitle">
     // console.log(this); // <h1 class="acctitle"> this is regular function phit loa a lote phit tar arrow function mar so yin a lote ma phit buu
 
