@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- fontawesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="carousel">
+        <ol class="carousel-indicators">
+          <li class="dot" data-bs-slide-top="1"></li>
+          <li class="dot" data-bs-slide-top="2"></li>
+          <li class="dot" data-bs-slide-top="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="./user/user2.jpg" class="user" alt="user1" />
+            <h3 class="jobtitle">Project Director</h3>
+            <a href="javascript:void(0)" class="contact-btn"
+              ><i class="fas fa-envelope"></i> Contact Me</a
+            >
+          </div>
+          <div class="carousel-item">
+            <img src="./user/user3.jpg" class="user" alt="user2" />
+            <h3 class="jobtitle">Senior Developer</h3>
+            <a href="javascript:void(0)" class="contact-btn"
+              ><i class="fas fa-envelope"></i> Contact Me</a
+            >
+          </div>
+          <div class="carousel-item">
+            <img src="./user/user1.jpg" class="user" alt="user3" />
+            <h3 class="jobtitle">Junior Designer</h3>
+            <a href="javascript:void(0)" class="contact-btn"
+              ><i class="fas fa-envelope"></i> Contact Me</a
+            >
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="carousel-control-prev" id="prev"
+          ><i class="fas fa-angle-left"></i
+        ></a>
+        <a href="javascript:void(0)" class="carousel-control-next" id="next"
+          ><i class="fas fa-angle-right"></i
+        ></a>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
