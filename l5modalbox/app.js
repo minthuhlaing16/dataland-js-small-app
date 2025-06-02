@@ -16,7 +16,7 @@ getbtnclose.addEventListener("click", function () {
 });
 
 window.onclick = function (e) {
-  //   console.log(e.target);
+  // console.log(e.target);
 
   if (e.target === getmodal) {
     getmodal.style.display = "none";
@@ -41,11 +41,10 @@ getfullscreenbtn.addEventListener("click", function () {
 });
 
 getclfullscreenbtn.addEventListener("click", function () {
+  // dar kya top document element ko khaw sa yar ma lol buu document bae
   if (document.exitFullscreen) {
     document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) {
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) {
-    document.msExitFullscreen();
   }
+
+  getclfullscreenbtn.style.display = "none";
 });

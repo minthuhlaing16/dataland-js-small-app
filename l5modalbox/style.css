@@ -45,6 +45,7 @@ body {
 .btn-close:hover,
 .btn-close:focus {
   color: red;
+  cursor: pointer;
 }
 
 form {
