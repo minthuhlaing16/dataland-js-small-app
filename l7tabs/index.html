@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Tabs</h2>
+      <ul class="nav">
+        <li class="nav-item">
+          <button
+            type="button"
+            id="autoclick"
+            class="tablinks active"
+            onclick="gettab(event,'home')"
+          >
+            Home
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            type="button"
+            class="tablinks"
+            onclick="gettab(event,'profile')"
+          >
+            Profile
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            type="button"
+            class="tablinks"
+            onclick="gettab(event,'contact')"
+          >
+            Contact
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            type="button"
+            class="tablinks"
+            onclick="gettab(event,'setting')"
+          >
+            Setting
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="home" class="tab-panel">
+          <span class="btn-close">&times;</span>
+          <h3>This is Home Informations</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium architecto sit accusamus laboriosam nesciunt. Fugit,
+            blanditiis ipsum, eos voluptatem quidem mollitia impedit eaque
+            quisquam, ea animi deserunt dolorem commodi accusantium.
+          </p>
+        </div>
+        <div id="profile" class="tab-panel">
+          <span class="btn-close">&times;</span>
+          <h3>This is Profile Informations</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium architecto sit accusamus laboriosam nesciunt. Fugit,
+            blanditiis ipsum, eos voluptatem quidem mollitia impedit eaque
+            quisquam, ea animi deserunt dolorem commodi accusantium.
+          </p>
+        </div>
+        <div id="contact" class="tab-panel">
+          <span class="btn-close">&times;</span>
+          <h3>This is Contact Informations</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium architecto sit accusamus laboriosam nesciunt. Fugit,
+            blanditiis ipsum, eos voluptatem quidem mollitia impedit eaque
+            quisquam, ea animi deserunt dolorem commodi accusantium.
+          </p>
+        </div>
+        <div id="setting" class="tab-panel">
+          <span class="btn-close">&times;</span>
+          <h3>This is Settings Informations</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium architecto sit accusamus laboriosam nesciunt. Fugit,
+            blanditiis ipsum, eos voluptatem quidem mollitia impedit eaque
+            quisquam, ea animi deserunt dolorem commodi accusantium.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
