@@ -17,6 +17,8 @@ getinput.addEventListener("keyup", filter);
 
 getsortazm1btn.addEventListener("click", sortingazm1);
 getsortzam1btn.addEventListener("click", sortingzam1);
+getsortazm2btn.addEventListener("click", sortingazm2);
+getsortzam2btn.addEventListener("click", sortingzam2);
 
 function filter() {
   const filter = this.value.toLowerCase();
@@ -125,4 +127,81 @@ function sortingzam1() {
 
     getul.appendChild(newli);
   });
+}
+
+// some logic thinking
+
+// console.log(getlis[0].textContent.toLowerCase()); // aung aung
+// console.log(getlis[1].textContent.toLowerCase()); // Bein Sein
+
+// if (getlis[0].textContent.toLowerCase() > getlis[1].textContent.toLowerCase()) {
+//   console.log(true);
+// } else if (
+//   getlis[0].textContent.toLowerCase() === getlis[1].textContent.toLowerCase()
+// ) {
+//   console.log("equal");
+// } else {
+//   console.log(false);
+// }
+
+// Method 2 a to z
+
+function sortingazm2() {
+  let shouldswitch = true;
+  let switching = true;
+
+  // console.log(getlis.length);
+  while (switching) {
+    switching = false;
+
+    let i;
+    for (i = 0; i < getlis.length - 1; i++) {
+      // console.log(i);
+      shouldswitch = false;
+      if (
+        getlis[i].textContent.toLowerCase() >
+        getlis[i + 1].textContent.toLowerCase()
+      ) {
+        shouldswitch = true;
+        break;
+      }
+    }
+    if (shouldswitch) {
+      // parent.insertBefore(new,existing);
+
+      getlis[i].parentElement.insertBefore(getlis[i + 1], getlis[i]);
+      switching = true;
+    }
+  }
+}
+
+// Method 2 z to a
+
+function sortingzam2() {
+  let shouldswitch = true;
+  let switching = true;
+
+  // console.log(getlis.length);
+  while (switching) {
+    switching = false;
+
+    let i;
+    for (i = 0; i < getlis.length - 1; i++) {
+      // console.log(i);
+      shouldswitch = false;
+      if (
+        getlis[i].textContent.toLowerCase() <
+        getlis[i + 1].textContent.toLowerCase()
+      ) {
+        shouldswitch = true;
+        break;
+      }
+    }
+    if (shouldswitch) {
+      // parent.insertBefore(new,existing);
+
+      getlis[i].parentElement.insertBefore(getlis[i + 1], getlis[i]);
+      switching = true;
+    }
+  }
 }
