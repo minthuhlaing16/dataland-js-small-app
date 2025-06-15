@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Todo List</h3>
+      <small>Left click to complete && Right click to delete</small>
+
+      <form action="" method="" id="form">
+        <div class="form-group">
+          <input
+            type="text"
+            name="textbox"
+            id="textbox"
+            class="form-control"
+            placeholder="write something..."
+            autocomplete="off"
+            autofocus
+          />
+        </div>
+      </form>
+      <ul id="list-group" class="list-group">
+        <!-- <li class="completed">A San</li>
+        <li>A Yan</li> -->
+      </ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
