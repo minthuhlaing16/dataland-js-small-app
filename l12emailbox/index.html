@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email box</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>This is Email Box. You can divide by a comma(",")</h3>
+      <form action="" method="" class="form">
+        <input
+          type="text"
+          name="emails[]"
+          id="emails"
+          class="form-control"
+          placeholder="Enter email address...."
+        />
+        <textarea
+          name="msg"
+          id="msg"
+          class="form-control"
+          placeholder="Enter Message"
+        ></textarea>
+        <div class="justify-content-end">
+          <button type="submit" class="btn">Send</button>
+        </div>
+      </form>
+      <div class="emailcontainer">
+        <!-- <span class="email">Sample One</span>
+        <span class="email">Sample Two</span>
+        <span class="email">Sample three</span>
+        <span class="email">Sample four</span>
+        <span class="email">Sample five</span> -->
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
