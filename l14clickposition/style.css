@@ -1,0 +1,99 @@
+:root {
+  --small-color: crimson;
+  --medium-color: crimson;
+  --large-color: crimson;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #444;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+}
+
+.container h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.map-container {
+  width: 1200px;
+  height: 600px;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  border: 1px solid gold;
+  margin-top: 12px;
+  border-radius: 12px;
+}
+
+.map-container .circle {
+  width: 30px;
+  height: 30px;
+  background-color: var(--small-color);
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: small 2.5s infinite;
+}
+.map-container .circle::b2efore {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--medium-color);
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  animation: medium 2.5s infinite;
+}
+
+.map-container .circle::after {
+  width: 100%;
+  height: 100%;
+  background-color: var(--large-color);
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  animation: large 2.5s infinite;
+}
+
+@keyframes small {
+  to {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes medium {
+  to {
+    transform: translate(-50%, -50%), scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes large {
+  to {
+    transform: translate(-50%, -50%), scale(6);
+    opacity: 0;
+  }
+}
