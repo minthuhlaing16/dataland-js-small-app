@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*			scroll ma lol chin loa fix size bae lol chin loa pay tar; page ta khu hte ma loa tone tar scroll swal ka tat page tway so ma tone tint buu;  */
+  overflow: hidden;
+}
+.form-control,
+.btn {
+  border-style: solid;
+  padding: 10px;
+}
+.gameform span {
+  display: block;
+  margin-top: 5px;
+}
+
+.mic-btn {
+  margin: 10px 0;
+}
