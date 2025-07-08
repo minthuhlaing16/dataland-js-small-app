@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sidebar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="javascript:void(0);">Home</a>
+      <a href="javascript:void(0);">News</a>
+      <div class="dropdown">
+        <button type="button" class="dropdown-toggle">Download</button>
+        <div class="dropdown-menu">
+          <a href="javascript:void(0);" class="dropdown-item">PDF</a>
+          <a href="javascript:void(0);" class="dropdown-item">Audio</a>
+          <a href="javascript:void(0);" class="dropdown-item">Video</a>
+        </div>
+      </div>
+
+      <a href="javascript:void(0);">Documentation</a>
+
+      <div class="dropdown">
+        <button type="button" class="dropdown-toggle">Site Setting</button>
+        <div class="dropdown-menu-mega">
+          <div class="header">
+            <h2>Mega Menu</h2>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <h4>Connection</h4>
+              <a href="javascript:void(0);">API REQUEST</a>
+              <a href="javascript:void(0);">Private Token</a>
+              <a href="javascript:void(0);">AWS Hosting</a>
+            </div>
+
+            <div class="col-4">
+              <h4>Resource</h4>
+              <a href="javascript:void(0);">Github</a>
+              <a href="javascript:void(0);">Gitlab</a>
+              <a href="javascript:void(0);">Gitbucket</a>
+            </div>
+
+            <div class="col-4">
+              <h4>Settings</h4>
+              <a href="javascript:void(0);">View Profile</a>
+              <a href="javascript:void(0);">Change Profile</a>
+              <a href="javascript:void(0);">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <button type="button" class="nav-btn open-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="nav-leftsidebar">
+      <button type="button" class="nav-btn close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <img src="../img/man.png" id="logo" class="logo" alt="avatar" />
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a href="javascript:void(0);" class="nav-link active">Dashboard</a>
+        </li>
+        <li class="list-group-item">
+          <a href="javascript:void(0);" class="nav-link">Sales</a>
+        </li>
+        <li class="list-group-item">
+          <a href="javascript:void(0);" class="nav-link">Others</a>
+          <ul>
+            <li>
+              <a href="javascript:void(0);" class="nav-link">Sales Report</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="nav-link">Return Report</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="nav-link">Purchase Report</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <a href="javascript:void(0);" class="nav-link">User Manage</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <p>Content Area</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
