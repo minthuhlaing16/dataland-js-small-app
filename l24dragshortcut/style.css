@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  max-width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow-x: hidden;
+}
+
+.box {
+  background-color: steelblue;
+  color: #fff;
+
+  position: absolute;
+  cursor: move;
+
+  user-select: none;
+
+  z-index: 1000;
+}
+
+.box #boxtitle {
+  padding: 10px;
+}
+
+.box .btns .btn-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: tomato;
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+
+  visibility: hidden;
+
+  transition: all 0.4s;
+}
+
+.box .btns.show .btn-icon {
+  visibility: visible;
+}
+
+.box .btns.show .btn-icon:nth-of-type(1) {
+  background-color: blue;
+  left: 50%;
+  top: -80px;
+}
+
+.box .btns.show .btn-icon:nth-of-type(2) {
+  background-color: skyblue;
+  left: 180%;
+  top: 50%;
+}
+
+.box .btns.show .btn-icon:nth-of-type(3) {
+  background-color: slateblue;
+  left: 50%;
+  top: 120px;
+}
+
+.box .btns.show .btn-icon:nth-of-type(4) {
+  background-color: navy;
+  left: -80%;
+  top: 50%;
+}
